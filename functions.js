@@ -49,8 +49,14 @@ console.log(enclose('kaas', 'Q'));
 // ["a", "b", "c"] geeft "abc"
 
 function concatArray(words) {
-
+    let glued = '';
+    for (let i = 0; i < words.length; i++) {
+        glued += words[i];
+    }
+    return glued;
 }
+console.log(concatArray(['abra', 'cadabra']));
+console.log(concatArray(['a', 'b', 'c']));
 
 
 /* Opdracht 5 */
