@@ -70,10 +70,15 @@ const greet = (wordArray) => {
     let output = 'Hoi ';
     for (let i = 0; i < wordArray.length; i++) {
         output += wordArray[i];
-        if (wordArray.length - 2)
-            output += i === (wordArray.length - 2) ? ' en ' : ', ';
+        if (i !== wordArray.length - 2 && i !== wordArray.length - 1) {
+            output += ', ';
+        } else {
+            output += ' en ';
+        }
     }
     output += '!';
     return output;
 }
 console.log(greet(["Nick", "Nova", "Mitchel", "Arjen"]));
+console.log(greet(["Piet", "Henk"]));
+console.log(greet(["A", "B", "C", "D", "E", "F"]));
