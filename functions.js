@@ -9,7 +9,7 @@ function sum(x, y, z) {
 }
 
 // om de uitkomst te kunnen zien moet de functie-aanroep nog wel omwikkelen met een console.log()
-console.log(sum(11,3, 9));
+console.log(sum(11, 3, 9));
 
 /* Opdracht 2 */
 // Schrijf een functie die twee strings verwacht en deze aan elkaar geplakt teruggeeft.
@@ -85,4 +85,4 @@ function greeting(stringsArray) {
     return greeting;
 }
 
-greeting(["Piet", "Henk"]);
+console.log(greeting(["Nick", "Nova", "Mitchel", "Arjen"])); 
