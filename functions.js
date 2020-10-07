@@ -66,18 +66,17 @@ console.log(concatArray(['a', 'b', 'c']));
 // ["Piet", "Henk"] geeft "Hoi Piet en Henk!"
 // ["A", "B", "C", "D", "E", "F"] geeft "Hoi A, B, C, D, E, en F!"
 
-const greet = (wordArray) => {
+const greet = wordArray => {
     let output = 'Hoi ';
     for (let i = 0; i < wordArray.length; i++) {
         output += wordArray[i];
         if (i !== wordArray.length - 2) {
-            output += i !== wordArray.length - 1 ? ', ' : '';
+            output += ', ';
         } else {
             output += ' en ';
         }
     }
-    output += '!';
-    return output;
+    return output.slice(0, -2) + '!';
 }
 
 console.log(greet(["Nick", "Nova", "Mitchel", "Arjen"]));
